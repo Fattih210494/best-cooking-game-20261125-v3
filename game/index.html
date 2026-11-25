@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Dapur Ceria — Game Masak 2D</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #2b1a0e; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: Arial, sans-serif; }
+  #wrap { width: min(1280px, 100vw); }
+  canvas { display: block; width: 100%; height: auto; background: #8ed4f2; cursor: pointer; }
+  #help {
+    color: #f2d8a8; text-align: center; font-size: 13px; padding: 8px 12px; line-height: 1.5;
+  }
+  #help b { color: #ffd94d; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="help">
+    <b>DAPUR CERIA</b> — Klik bahan di bawah, klik stasiun untuk memasak, ambil masakan, taruh di meja saji hijau, lalu klik pelanggan untuk menyajikan.
+    Tombol: <b>1</b> blender · <b>2</b> talenan · <b>3</b> wajan · <b>4/Spasi</b> sajikan ke piring · <b>P</b> jeda · <b>M</b> suara · <b>R</b> restart.
+  </div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
